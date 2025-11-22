@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://yr81wn0m3hjj"]
+
+[ext_resource type="Script" uid="uid://co58c482fjf13" path="res://scripts/hud.gd" id="1_ahhtf"]
+[ext_resource type="Texture2D" uid="uid://bjmxahutm8f01" path="res://assets/dude/jump.png" id="2_oo0fn"]
+
+[node name="Hud" type="Node"]
+script = ExtResource("1_ahhtf")
+health_texture = ExtResource("2_oo0fn")
+
+[node name="Panel" type="Panel" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
+layout_mode = 0
+offset_right = 262.0
+offset_bottom = 77.0
+theme_override_constants/separation = 2
